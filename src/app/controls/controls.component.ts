@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {Store} from '@ngrx/store';
+import {IStore} from '../store';
+import {Change} from '../store/actions/numbers.action';
+import {NumbersService} from '../shared/services/numbers.service';
 
 @Component({
   selector: 'app-controls',
   templateUrl: './controls.component.html',
   styleUrls: ['./controls.component.scss']
 })
-export class ControlsComponent implements OnInit {
+export class ControlsComponent {
 
-  constructor() { }
+  constructor(private store: Store<IStore>, private numbersService: NumbersService,
+  ) { }
 
-  ngOnInit() {
+  public start(): void {
+    this.store.dispatch(new Change());
+  }
+  public stop(): void {
+    this.numbersService.stop();
   }
 
 }
