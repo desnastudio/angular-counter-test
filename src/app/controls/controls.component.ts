@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {Store} from '@ngrx/store';
 import {IStore} from '../store';
-import {Change} from '../store/actions/numbers.action';
+import {Change, Reset} from '../store/actions/numbers.action';
 import {NumbersService} from '../shared/services/numbers.service';
 
 @Component({
@@ -19,6 +19,9 @@ export class ControlsComponent {
   }
   public stop(): void {
     this.numbersService.stop();
+  }
+  public reset(): void {
+    this.store.dispatch(new Reset());
   }
 
 }

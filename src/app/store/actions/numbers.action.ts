@@ -3,7 +3,8 @@ import { Action } from '@ngrx/store';
 export enum NumbersActions {
   CHANGE = 'CHANGE',
   INCREASE = 'INCREASE',
-  DECREASE = 'DECREASE'
+  DECREASE = 'DECREASE',
+  RESET = 'RESET'
 }
 
 export class Change implements Action {
@@ -18,4 +19,8 @@ export class Decrease implements Action {
   public readonly type: string = NumbersActions.DECREASE;
 }
 
-export type NumbersActionsTypes = Change | Increase | Decrease;
+export class Reset implements Action {
+  public readonly type: string = NumbersActions.RESET;
+}
+
+export type NumbersActionsTypes = Change | Increase | Decrease | Reset;
