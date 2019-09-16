@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {map, mergeMap, switchMap, takeUntil} from 'rxjs/operators';
+import {mergeMap, switchMap, takeUntil} from 'rxjs/operators';
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import {Decrease, Increase, NumbersActions} from '../actions/numbers.action';
 import {interval} from 'rxjs';
