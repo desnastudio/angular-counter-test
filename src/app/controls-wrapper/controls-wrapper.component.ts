@@ -5,13 +5,12 @@ import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-from-store',
-  templateUrl: './from-store.component.html',
-  styleUrls: ['./from-store.component.scss']
+  templateUrl: './controls-wrapper.component.html',
+  styleUrls: ['./controls-wrapper.component.scss']
 })
-export class FromStoreComponent implements OnInit {
+export class ControlsWrapperComponent implements OnInit {
   public firstNumber$!: Observable<number>;
   public secondNumber$!: Observable<number>;
-
 
   constructor(private store: Store<IStore>
   ) { }

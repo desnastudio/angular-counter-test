@@ -3,7 +3,7 @@ import {
   MatButtonModule,
 } from '@angular/material';
 import { CommonModule } from '@angular/common';
-import {NumbersService} from './services/numbers.service';
+import {CalculationService} from './services/calculation.service';
 
 @NgModule({
   declarations: [],
@@ -11,7 +11,7 @@ import {NumbersService} from './services/numbers.service';
     CommonModule,
     MatButtonModule
   ],
-  providers: [NumbersService]
+  providers: [CalculationService]
 })
 export class SharedModule {
   public static forRoot(): ModuleWithProviders {

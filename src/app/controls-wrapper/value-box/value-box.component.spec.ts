@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShowValueComponent } from './show-value.component';
+import { ValueBoxComponent } from './value-box.component';
 
-describe('ShowValueComponent', () => {
-  let component: ShowValueComponent;
-  let fixture: ComponentFixture<ShowValueComponent>;
+describe('ValueBoxComponent', () => {
+  let component: ValueBoxComponent;
+  let fixture: ComponentFixture<ValueBoxComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShowValueComponent ]
+      declarations: [ ValueBoxComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShowValueComponent);
+    fixture = TestBed.createComponent(ValueBoxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

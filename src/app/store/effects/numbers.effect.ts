@@ -3,7 +3,7 @@ import {map, mergeMap, switchMap, takeUntil} from 'rxjs/operators';
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import {Decrease, Increase, NumbersActions} from '../actions/numbers.action';
 import {interval} from 'rxjs';
-import {NumbersService} from '../../shared/services/numbers.service';
+import {CalculationService} from '../../shared/services/calculation.service';
 
 @Injectable()
 export class NumbersEffects {
@@ -20,5 +20,5 @@ export class NumbersEffects {
     )
   );
 
-  public constructor(private actions$: Actions, private numbersService: NumbersService) {}
+  public constructor(private actions$: Actions, private numbersService: CalculationService) {}
 }

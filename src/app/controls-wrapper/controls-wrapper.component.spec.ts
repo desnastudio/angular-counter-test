@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FromStoreComponent } from './from-store.component';
+import { ControlsWrapperComponent } from './controls-wrapper.component';
 
-describe('FromStoreComponent', () => {
-  let component: FromStoreComponent;
-  let fixture: ComponentFixture<FromStoreComponent>;
+describe('ControlsWrapperComponent', () => {
+  let component: ControlsWrapperComponent;
+  let fixture: ComponentFixture<ControlsWrapperComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FromStoreComponent ]
+      declarations: [ ControlsWrapperComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FromStoreComponent);
+    fixture = TestBed.createComponent(ControlsWrapperComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

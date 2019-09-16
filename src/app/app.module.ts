@@ -9,8 +9,8 @@ import {environment} from '../environments/environment.prod';
 import { ControlsComponent } from './controls/controls.component';
 import {SharedModule} from './shared/shared.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { FromStoreComponent } from './from-store/from-store.component';
-import {ShowValueComponent} from './from-store/show-value/show-value.component';
+import { ControlsWrapperComponent } from './controls-wrapper/controls-wrapper.component';
+import {ValueBoxComponent} from './controls-wrapper/value-box/value-box.component';
 import {EffectsModule} from '@ngrx/effects';
 import {effects} from './store/effects';
 
@@ -18,8 +18,8 @@ import {effects} from './store/effects';
   declarations: [
     AppComponent,
     ControlsComponent,
-    FromStoreComponent,
-    ShowValueComponent,
+    ControlsWrapperComponent,
+    ValueBoxComponent,
   ],
   imports: [
     BrowserModule,

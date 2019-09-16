@@ -2,10 +2,10 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-show-value',
-  templateUrl: './show-value.component.html',
-  styleUrls: ['./show-value.component.scss']
+  templateUrl: './value-box.component.html',
+  styleUrls: ['./value-box.component.scss']
 })
-export class ShowValueComponent {
+export class ValueBoxComponent {
   @Input()
   public value = 0;
 }

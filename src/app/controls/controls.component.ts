@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {Store} from '@ngrx/store';
 import {IStore} from '../store';
 import {Change, Reset} from '../store/actions/numbers.action';
-import {NumbersService} from '../shared/services/numbers.service';
+import {CalculationService} from '../shared/services/calculation.service';
 
 @Component({
   selector: 'app-controls',
@@ -11,7 +11,7 @@ import {NumbersService} from '../shared/services/numbers.service';
 })
 export class ControlsComponent {
 
-  constructor(private store: Store<IStore>, private numbersService: NumbersService,
+  constructor(private store: Store<IStore>, private numbersService: CalculationService,
   ) { }
 
   public start(): void {
