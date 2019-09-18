@@ -1,5 +1,5 @@
-import {Actions, ActionTypes} from './actions';
-import {initialState, State} from './state';
+import {Actions, ActionTypes} from './counter.actions';
+import {initialState, State} from './counter.state';
 
 export function counterReducer(state = initialState, action: Actions): State {
   switch (action.type) {

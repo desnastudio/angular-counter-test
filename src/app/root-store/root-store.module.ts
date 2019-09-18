@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CounterStoreModule } from './counter-store/counter-store.module';
+import { CounterStoreModule } from './counter-store/counter.module';
 
 
 
