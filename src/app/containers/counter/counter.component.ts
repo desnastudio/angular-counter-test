@@ -23,6 +23,8 @@ export class CounterComponent implements OnInit {
   }
 
   startCounting() {
+    // Here, timer should be refactored as another ngrx component with start/stop/reset actions,
+    // but for now we omit this for simplicity
     const secondsInterval = timer(1000, 1000);
     secondsInterval.subscribe(_ => {
       this.store.dispatch(new ChangeAction());
