@@ -3,7 +3,7 @@ import {select, Store} from '@ngrx/store';
 import {RootStoreState} from '../../root-store';
 import {Observable, timer} from 'rxjs';
 import {CounterSelectors} from '../../root-store/counter-store';
-import {DecreaseAction, IncreaseAction} from '../../root-store/counter-store/counter.actions';
+import {ChangeAction} from '../../root-store/counter-store/counter.actions';
 
 @Component({
   selector: 'app-counter',
@@ -25,8 +25,7 @@ export class CounterComponent implements OnInit {
   startCounting() {
     const secondsInterval = timer(1000, 1000);
     secondsInterval.subscribe(_ => {
-      this.store.dispatch(new IncreaseAction());
-      this.store.dispatch(new DecreaseAction());
+      this.store.dispatch(new ChangeAction());
     });
   }
 }
