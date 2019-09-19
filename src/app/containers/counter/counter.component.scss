@@ -1,0 +1,22 @@
+.b-counter {
+  display: inline-block;
+}
+
+.b-counter__button-start {
+  padding: 0.5em 3em;
+  cursor: pointer;
+  margin: 1em;
+  background: #666666;
+  border: none;
+  border-radius: 0.5em;
+  color: #fff;
+  font-family: "Arial Black", serif;
+  font-size: 1.5em;
+  display: block;
+  transition: 0.2s;
+
+  &:hover {
+    background: #ccc;
+    color: #666666;
+  }
+}

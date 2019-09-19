@@ -1,5 +1,7 @@
-<app-counter-numbers
-  [counterFirst]="counterFirst$ | async"
-  [counterSecond]="counterSecond$ | async">
-</app-counter-numbers>
-<button (click)="startCounting()">Start</button>
+<div class="b-counter">
+  <app-counter-numbers
+    [counterFirst]="counterFirst$ | async"
+    [counterSecond]="counterSecond$ | async">
+  </app-counter-numbers>
+  <button (click)="startCounting()" class="b-counter__button-start">Start</button>
+</div>
