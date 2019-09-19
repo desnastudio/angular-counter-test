@@ -5,11 +5,13 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {RootStoreModule} from './root-store/root.module';
 import {CounterComponent} from './containers/counter/counter.component';
+import {CounterNumbersComponent} from './components/counter-numbers/counter-numbers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CounterComponent
+    CounterComponent,
+    CounterNumbersComponent
   ],
   imports: [
     BrowserModule,
