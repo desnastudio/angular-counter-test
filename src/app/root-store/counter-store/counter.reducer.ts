@@ -10,12 +10,12 @@ export function counterReducer(state = initialState, action: Actions): State {
     case ActionTypes.INCREASE:
       return {
         ...state,
-        counterFirst: this.counterFirst + 1
+        counterFirst: state.counterFirst + 1
       };
     case ActionTypes.DECREASE:
       return {
         ...state,
-        counterSecond: this.counterSecond - 1
+        counterSecond: state.counterSecond - 1
       };
     default: {
       return state;
